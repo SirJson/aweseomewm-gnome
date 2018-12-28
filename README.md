@@ -2,23 +2,26 @@
 Run a GNOME 3 session but use awesome as your window manager. At the moment this is only tested on Fedora 29 but if everything goes well this will work on Arch Linux and Ubuntu-likes soon.
 
 ## Dependencies
-This repo creates a new session in GDM called "awesome GNOME". The requirements are gnome-flashback and awesome 4.x+.
+The scripts in this repository create a new session in GDM called "awesome GNOME". The requirements are gnome-flashback and awesome 4.x+.
 
 Because gnome-flashback isn't always packaged you might need grab a copy of it from somewhere. Below you can find packages and repositories that worked for me.
 
+Most applications for gnome need Polkit these days. If you are running light and don't have any agent available try `lxpolkit`
+
 # Fedora 29
 ```
+dnf install lxpolkit
 dnf copr enable victoroliveira/gnome-flashback
 dnf install gnome-flashback
 ```
 
-## Installation
+## How do I install this?
 
 ```
 make install
 ```
 
-## Uninstallation
+## How to uninstall?
 
 ```
 make uninstall
