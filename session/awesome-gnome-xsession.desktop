@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=awesome GNOME
+Comment=This session logs you into GNOME with awesome as the window manager
+Exec=gnome-session-awesome
+TryExec=awesome-gnome
+Icon=
+Type=Application
+DesktopNames=GNOME

@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=Application
-Name=i3-gnome
+Name=awesome-gnome
 NoDisplay=true
 Comment=improved dynamic tiling window manager
-Exec=i3-gnome
-X-GNOME-WMName=i3-gnome
+Exec=awesome-gnome
+X-GNOME-WMName=awesome-gnome
 X-GNOME-Autostart-Phase=WindowManager
 X-GNOME-Provides=windowmanager
 X-GNOME-Autostart-Notify=false
