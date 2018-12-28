@@ -1,36 +1,42 @@
-# awesomewm-gnome (WIP)
+# awesomewm-gnome
+
 Run a GNOME 3 session but use awesome as your window manager. At the moment this is only tested on Fedora 29 but if everything goes well this will work on Arch Linux and Ubuntu-likes soon.
 
 ## Dependencies
+
 The scripts in this repository create a new session in GDM called "awesome GNOME". The requirements are gnome-flashback and awesome 4.x+.
 
 Because gnome-flashback isn't always packaged you might need grab a copy of it from somewhere. Below you can find packages and repositories that worked for me.
 
-Most applications for gnome need Polkit these days. If you are running light and don't have any agent available try `lxpolkit`
+### Fedora 29
 
-# Fedora 29
-```
-dnf install lxpolkit
+```sh
 dnf copr enable victoroliveira/gnome-flashback
 dnf install gnome-flashback
 ```
 
-## How do I install this?
+## Setup
 
-```
+Run the following with sudo or a root shell
+
+```sh
 make install
 ```
 
-## How to uninstall?
+## How to uninstall
 
-```
+```sh
 make uninstall
 ```
 
 ## Configuration
 
-**WIP**
+Works out of the box with all the bells and whistles. 
 
-But it shouldn't be too different from the i3 version just written in lua. Be sure to checkout the extended FAQ as well to make sure all services are running!
+You might want to install a bleeding edge version of awesome and use the new GTK features for your theme.
 
-> Everything should work out of the box. If you like to use nm-applet add `exec --no-startup-id dbus-launch nm-applet` to your i3 config file.
+Like in the original i3 version if you want the `nm-applet` you have to launch from your config.
+
+```lua
+awful.spawn("dbus-launch nm-applet", false) -- Launch nm-applet without startup id
+```
