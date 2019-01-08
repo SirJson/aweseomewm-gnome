@@ -8,6 +8,12 @@ The scripts in this repository create a new session in GDM called "awesome GNOME
 
 Because gnome-flashback isn't always packaged you might need grab a copy of it from somewhere. Below you can find packages and repositories that worked for me.
 
+### Arch Linux
+
+```sh
+sudo pacman -Syu gnome-flashback gnome gnome-icons gnome-icons-extra
+```
+
 ### Fedora 29
 
 ```sh
@@ -17,16 +23,16 @@ dnf install gnome-flashback
 
 ## Setup
 
-Run the following with sudo or a root shell
+Run the following with if you have sudo installed
 
 ```sh
-make install
+sudo make install
 ```
 
 ## How to uninstall
 
 ```sh
-make uninstall
+sudo make uninstall
 ```
 
 ## Configuration
@@ -35,7 +41,8 @@ Works out of the box with all the bells and whistles.
 
 You might want to install a bleeding edge version of awesome and use the new GTK features for your theme.
 
-Like in the original i3 version if you want the `nm-applet` you have to launch from your config.
+~~Like in the original i3 version if you want the `nm-applet` you have to launch from your config.~~
+You will need some more code to make sure there is only one nm-applet.
 
 ```lua
 awful.spawn("dbus-launch nm-applet", false) -- Launch nm-applet without startup id
