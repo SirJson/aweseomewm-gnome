@@ -1,10 +1,10 @@
 # awesomewm-gnome
 
-Run a GNOME 3 session but use awesome as your window manager. At the moment this is only tested on Fedora 29 but if everything goes well this will work on Arch Linux and Ubuntu-likes soon.
+Run a GNOME 3 session but use awesome as your window manager. At the moment this is only tested on Fedora 29 and Arch Linux but if everything goes well this will work Ubuntu-likes soon.
 
 ## Dependencies
 
-The scripts in this repository create a new session in GDM called "awesome GNOME". The requirements are gnome-flashback and awesome 4.x+.
+The scripts in this repository create a new session in GDM called "awesome GNOME". The requirements are gnome-flashback and awesome 4.x+. I recommend building awesome from git to avoid some nasty bugs and to support GTK 3 in your Themes.
 
 Because gnome-flashback isn't always packaged you might need grab a copy of it from somewhere. Below you can find packages and repositories that worked for me.
 
