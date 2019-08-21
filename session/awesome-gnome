@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Register with gnome-session so that it does not kill the whole session thinking it is dead.
 test -n "$DESKTOP_AUTOSTART_ID" && {
