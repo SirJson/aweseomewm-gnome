@@ -26,7 +26,7 @@ dnf install gnome-flashback
 ### Ubuntu 18.04
 
 ```sh
-sudo apt-get install gnome gnome-flashback gnome-icon-theme gnome-themes-extra
+sudo apt-get install gnome gnome-flashback gnome-icon-theme gnome-themes-extra make
 ```
 
 ## Setup
