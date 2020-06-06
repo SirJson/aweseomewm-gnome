@@ -1,5 +1,7 @@
 # awesomewm-gnome
 
+**NOTE: As of 2020-06-06 this fork is unmaintained. In recent testing I found that this script will break an existing GNOME + GDM installation on Arch Linux. I think GNOME changed session handling again and removing awesomewm-gnome after installing can lock you out completely. It might still be fine on older systems like Ubuntu 18.04 but don't quote me on that.**
+
 Run a GNOME 3.x session but use awesome for window management. At the moment this is only tested on Fedora 29 and a working daily driver Arch Linux system. My latest test was with awesome 4.3 and GNOME 3.32 on March 2019.
 
 If you stumble upon this repo a few years later and I didn't conduct a test in the meantime there are chances that it stopped working, probably because of GNOME.
