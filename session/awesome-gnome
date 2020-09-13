@@ -5,7 +5,7 @@ test -n "$DESKTOP_AUTOSTART_ID" && {
     dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.RegisterClient "string:awesome-gnome" "string:$DESKTOP_AUTOSTART_ID"
 }
 
-procs=("/usr/bin/gnome-flashback" "/usr/lib/gnome-settings-daemon/gsd-xsettings" "/usr/bin/gnome-keyring-daemon -f")
+procs=("/usr/libexec/gsd-xsettings" "gnome-flashback" "gnome-keyring-daemon -f")
 procslength=${#procs[@]}
 
 for (( i=0; i<${procslength}; i++ )); do
@@ -20,6 +20,7 @@ for pid in ${pids[*]}; do
     kill $pid
 done
 
+# Logout process.
 test -n "$DESKTOP_AUTOSTART_ID" && {
-    dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
+	dbus-send --print-reply --session --dest=org.gnome.SessionManager "/org/gnome/SessionManager" org.gnome.SessionManager.Logout "uint32:1"
 }
