@@ -21,7 +21,7 @@ Because gnome-flashback isn't always packaged you might need grab a copy of it f
 ### Arch Linux / Manjaro
 
 ```sh
-sudo pacman -Syu gnome-flashback gnome gnome-icons gnome-icons-extra
+sudo pacman -Syu gnome-flashback gnome gnome-icon-theme gnome-icon-theme-extra
 ```
 
 ### Fedora 29
