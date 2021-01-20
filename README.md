@@ -11,6 +11,7 @@ My latest test was with **awesome 4.3-2 (Build Date: 31 Jul 2020)** and **GNOME 
 Without the people on this list this Project would probably not work at all *and will eat your lunch.*
 
 - [molysgaard](https://github.com/molysgaard)
+- [KorewaLidesu](https://github.com/KorewaLidesu)
 
 ## Dependencies
 
@@ -18,10 +19,10 @@ The scripts in this repository create a new session in GDM called "awesome GNOME
 
 Because gnome-flashback isn't always packaged you might need grab a copy of it from somewhere. Below you can find packages and repositories that worked for me.
 
-### Arch Linux / Manjaro
+### Arch Linux
 
 ```sh
-sudo pacman -Syu gnome-flashback gnome gnome-icon-theme gnome-icon-theme-extra
+sudo pacman -Syu gnome-flashback gnome gnome-icon-theme gnome-icon-theme-extras
 ```
 
 ### Fedora 29
